@@ -14,8 +14,6 @@
 		</property> 
 	</bean>
 
-
-
      <!-- 마이바티스 지원을 위한 빈 등록 -->    
      <!--  1]SqlSessionFactory -->
      <bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
@@ -24,7 +22,6 @@
 		<!-- 환경설정 파일 위치 설정 -->
 		<property name="configLocation" value="classpath:mybatis/Configuration.xml"/>
      </bean>
-     
      
      <!-- 2]SqlSessionTemplate -->
      <bean id="template" name="template" class="org.mybatis.spring.SqlSessionTemplate">
